@@ -1,0 +1,350 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		30D99653269F3A1E00BD5CCC /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30D99652269F3A1E00BD5CCC /* main.cpp */; };
+		30D9965B269F6A6500BD5CCC /* CoffeeMachine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30D99659269F6A6500BD5CCC /* CoffeeMachine.cpp */; };
+		30D9965E269F6A7C00BD5CCC /* Beverage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30D9965C269F6A7C00BD5CCC /* Beverage.cpp */; };
+		30D99661269F6A8D00BD5CCC /* Ingredient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30D9965F269F6A8D00BD5CCC /* Ingredient.cpp */; };
+		30D99664269F6B5300BD5CCC /* BeverageInventory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30D99662269F6B5300BD5CCC /* BeverageInventory.cpp */; };
+		30D99667269F6B6100BD5CCC /* IngredientInventory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30D99665269F6B6100BD5CCC /* IngredientInventory.cpp */; };
+		30D99671269FB63900BD5CCC /* Recipe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30D9966F269FB63900BD5CCC /* Recipe.cpp */; };
+		30D9967426A056C400BD5CCC /* BeverageMaker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30D9967226A056C400BD5CCC /* BeverageMaker.cpp */; };
+		30D9967726A0689400BD5CCC /* TestCoffeeMachine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30D9967526A0689400BD5CCC /* TestCoffeeMachine.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		30D9964D269F3A1E00BD5CCC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		30D9964F269F3A1E00BD5CCC /* CoffeeMachine */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CoffeeMachine; sourceTree = BUILT_PRODUCTS_DIR; };
+		30D99652269F3A1E00BD5CCC /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		30D99659269F6A6500BD5CCC /* CoffeeMachine.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CoffeeMachine.cpp; sourceTree = "<group>"; };
+		30D9965A269F6A6500BD5CCC /* CoffeeMachine.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CoffeeMachine.hpp; sourceTree = "<group>"; };
+		30D9965C269F6A7C00BD5CCC /* Beverage.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Beverage.cpp; sourceTree = "<group>"; };
+		30D9965D269F6A7C00BD5CCC /* Beverage.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Beverage.hpp; sourceTree = "<group>"; };
+		30D9965F269F6A8D00BD5CCC /* Ingredient.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Ingredient.cpp; sourceTree = "<group>"; };
+		30D99660269F6A8D00BD5CCC /* Ingredient.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Ingredient.hpp; sourceTree = "<group>"; };
+		30D99662269F6B5300BD5CCC /* BeverageInventory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BeverageInventory.cpp; sourceTree = "<group>"; };
+		30D99663269F6B5300BD5CCC /* BeverageInventory.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BeverageInventory.hpp; sourceTree = "<group>"; };
+		30D99665269F6B6100BD5CCC /* IngredientInventory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = IngredientInventory.cpp; sourceTree = "<group>"; };
+		30D99666269F6B6100BD5CCC /* IngredientInventory.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = IngredientInventory.hpp; sourceTree = "<group>"; };
+		30D99669269F9A5B00BD5CCC /* json.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = json.hpp; path = ../../../../Downloads/json.hpp; sourceTree = "<group>"; };
+		30D9966B269F9C1A00BD5CCC /* file.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = file.json; sourceTree = "<group>"; };
+		30D9966F269FB63900BD5CCC /* Recipe.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Recipe.cpp; sourceTree = "<group>"; };
+		30D99670269FB63900BD5CCC /* Recipe.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Recipe.hpp; sourceTree = "<group>"; };
+		30D9967226A056C400BD5CCC /* BeverageMaker.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BeverageMaker.cpp; sourceTree = "<group>"; };
+		30D9967326A056C400BD5CCC /* BeverageMaker.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BeverageMaker.hpp; sourceTree = "<group>"; };
+		30D9967526A0689400BD5CCC /* TestCoffeeMachine.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TestCoffeeMachine.cpp; sourceTree = "<group>"; };
+		30D9967626A0689400BD5CCC /* TestCoffeeMachine.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TestCoffeeMachine.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		30D9964C269F3A1E00BD5CCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30D99646269F3A1E00BD5CCC = {
+			isa = PBXGroup;
+			children = (
+				30D99651269F3A1E00BD5CCC /* CoffeeMachine */,
+				30D99650269F3A1E00BD5CCC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		30D99650269F3A1E00BD5CCC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				30D9964F269F3A1E00BD5CCC /* CoffeeMachine */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		30D99651269F3A1E00BD5CCC /* CoffeeMachine */ = {
+			isa = PBXGroup;
+			children = (
+				30D9966A269F9BEE00BD5CCC /* Test */,
+				30D99668269F9A0100BD5CCC /* Helper */,
+				30D99652269F3A1E00BD5CCC /* main.cpp */,
+				30D99659269F6A6500BD5CCC /* CoffeeMachine.cpp */,
+				30D9965A269F6A6500BD5CCC /* CoffeeMachine.hpp */,
+				30D9965C269F6A7C00BD5CCC /* Beverage.cpp */,
+				30D9965D269F6A7C00BD5CCC /* Beverage.hpp */,
+				30D9965F269F6A8D00BD5CCC /* Ingredient.cpp */,
+				30D99660269F6A8D00BD5CCC /* Ingredient.hpp */,
+				30D99662269F6B5300BD5CCC /* BeverageInventory.cpp */,
+				30D99663269F6B5300BD5CCC /* BeverageInventory.hpp */,
+				30D99665269F6B6100BD5CCC /* IngredientInventory.cpp */,
+				30D99666269F6B6100BD5CCC /* IngredientInventory.hpp */,
+				30D9966F269FB63900BD5CCC /* Recipe.cpp */,
+				30D99670269FB63900BD5CCC /* Recipe.hpp */,
+				30D9967226A056C400BD5CCC /* BeverageMaker.cpp */,
+				30D9967326A056C400BD5CCC /* BeverageMaker.hpp */,
+			);
+			path = CoffeeMachine;
+			sourceTree = "<group>";
+		};
+		30D99668269F9A0100BD5CCC /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				30D99669269F9A5B00BD5CCC /* json.hpp */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		30D9966A269F9BEE00BD5CCC /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				30D9966B269F9C1A00BD5CCC /* file.json */,
+				30D9967526A0689400BD5CCC /* TestCoffeeMachine.cpp */,
+				30D9967626A0689400BD5CCC /* TestCoffeeMachine.hpp */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		30D9964E269F3A1E00BD5CCC /* CoffeeMachine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30D99656269F3A1E00BD5CCC /* Build configuration list for PBXNativeTarget "CoffeeMachine" */;
+			buildPhases = (
+				30D9964B269F3A1E00BD5CCC /* Sources */,
+				30D9964C269F3A1E00BD5CCC /* Frameworks */,
+				30D9964D269F3A1E00BD5CCC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoffeeMachine;
+			productName = CoffeeMachine;
+			productReference = 30D9964F269F3A1E00BD5CCC /* CoffeeMachine */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		30D99647269F3A1E00BD5CCC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Shilpi Roy";
+				TargetAttributes = {
+					30D9964E269F3A1E00BD5CCC = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = 30D9964A269F3A1E00BD5CCC /* Build configuration list for PBXProject "CoffeeMachine" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 30D99646269F3A1E00BD5CCC;
+			productRefGroup = 30D99650269F3A1E00BD5CCC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				30D9964E269F3A1E00BD5CCC /* CoffeeMachine */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		30D9964B269F3A1E00BD5CCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30D99661269F6A8D00BD5CCC /* Ingredient.cpp in Sources */,
+				30D99664269F6B5300BD5CCC /* BeverageInventory.cpp in Sources */,
+				30D99671269FB63900BD5CCC /* Recipe.cpp in Sources */,
+				30D9967426A056C400BD5CCC /* BeverageMaker.cpp in Sources */,
+				30D99653269F3A1E00BD5CCC /* main.cpp in Sources */,
+				30D9967726A0689400BD5CCC /* TestCoffeeMachine.cpp in Sources */,
+				30D99667269F6B6100BD5CCC /* IngredientInventory.cpp in Sources */,
+				30D9965E269F6A7C00BD5CCC /* Beverage.cpp in Sources */,
+				30D9965B269F6A6500BD5CCC /* CoffeeMachine.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		30D99654269F3A1E00BD5CCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		30D99655269F3A1E00BD5CCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		30D99657269F3A1E00BD5CCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7UZYW5MJQ7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		30D99658269F3A1E00BD5CCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7UZYW5MJQ7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		30D9964A269F3A1E00BD5CCC /* Build configuration list for PBXProject "CoffeeMachine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30D99654269F3A1E00BD5CCC /* Debug */,
+				30D99655269F3A1E00BD5CCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30D99656269F3A1E00BD5CCC /* Build configuration list for PBXNativeTarget "CoffeeMachine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30D99657269F3A1E00BD5CCC /* Debug */,
+				30D99658269F3A1E00BD5CCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 30D99647269F3A1E00BD5CCC /* Project object */;
+}
