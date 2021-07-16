@@ -20,6 +20,7 @@ using json = nlohmann::json;
 
 class TestCoffeeMachine {
 public:
+    // given test case - can have 3 possible outputs on different runs
     void RunTestCase1() {
         std::cout<<"Running test case 1....\n\n-----------\n";
          auto j = json::parse(R"(
@@ -117,8 +118,13 @@ public:
          std::cout<<"Matches output id: "<<idx + 1<<"\n"<<"-------------\n";
     }
     
+    /*
+     only two of the three items can be prepared, can have 3 possible outputs
+     in different runs
+     */
     void RunTestCase2() {
         std::cout<<"Running test case 2....\n\n-----------\n";
+
          auto j = json::parse(R"(
                                {
                                  "machine": {
@@ -201,6 +207,10 @@ public:
          std::cout<<"Matches output id: "<<idx + 1<<"\n"<<"-------------\n";
     }
     
+    /*
+     two items can't be prepared - insufficient and unavailable ingredient
+     from rest three items - either 2 can be prepared or 1 can be prepared
+     */
     void RunTestCase3() {
         std::cout<<"Running test case 3....\n\n-----------\n";
         auto j = json::parse(R"(
@@ -293,7 +303,9 @@ public:
          std::cout<<"Matches output id: "<<idx + 1<<"\n"<<"-------------\n";
     }
     
-    
+    /*
+     no beverages present, no outlets
+     */
     void RunTestCase4() {
         std::cout<<"Running test case 4....\n\n-----------\n";
         auto j = json::parse(R"(

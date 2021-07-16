@@ -50,7 +50,7 @@ public:
         m_items->AddIngredient(name, quantity);
     }
     
-    /* try to prepare all N beverages in inventory parallely
+    /* try to prepare all N beverages in inventory parallely on new thread
      returns appropriate response from each thread about success/failure
      */
     vector<std::string> PrepareBeverage() {

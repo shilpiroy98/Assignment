@@ -10,7 +10,7 @@
 #include "TestCoffeeMachine.hpp"
 
 int main(int argc, const char * argv[]) {
-
+    // run all tests
     TestCoffeeMachine *testCoffeeMachine = new TestCoffeeMachine();
     testCoffeeMachine->RunTests();
     return 0;

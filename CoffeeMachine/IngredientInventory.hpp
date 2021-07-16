@@ -52,9 +52,16 @@ public:
 
     
     /*
-     Since inventory is shared across different beverages
-     while preparing, add a locking system in DeductIngredientAmount
-     so that no two beverages deduct from inventory at same time
+     1. Takes list of ingredients
+     2. Checks if ingredients can be deducted by requested amount
+     3. Return failure response if not deductable
+     3. Deducts amount if deductable
+     4. Returns success
+     -----------------------------------------------
+     Since inventory is shared resource amoung beverages in CoffeeMachine
+     While preparing, adding a lock guard to ensure
+     no two beverages deduct from inventory at same time (no race conditions)
+     ------------------------------------------------------
      */
     pair<DeductResponse, string> DeductIngredientsAmount(std::vector<Ingredient*> ingredients) {
         std::lock_guard<std::mutex> lock(mutex);
