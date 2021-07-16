@@ -44,7 +44,6 @@
 		30D99665269F6B6100BD5CCC /* IngredientInventory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = IngredientInventory.cpp; sourceTree = "<group>"; };
 		30D99666269F6B6100BD5CCC /* IngredientInventory.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = IngredientInventory.hpp; sourceTree = "<group>"; };
 		30D99669269F9A5B00BD5CCC /* json.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = json.hpp; path = ../../../../Downloads/json.hpp; sourceTree = "<group>"; };
-		30D9966B269F9C1A00BD5CCC /* file.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = file.json; sourceTree = "<group>"; };
 		30D9966F269FB63900BD5CCC /* Recipe.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Recipe.cpp; sourceTree = "<group>"; };
 		30D99670269FB63900BD5CCC /* Recipe.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Recipe.hpp; sourceTree = "<group>"; };
 		30D9967226A056C400BD5CCC /* BeverageMaker.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BeverageMaker.cpp; sourceTree = "<group>"; };
@@ -115,7 +114,6 @@
 		30D9966A269F9BEE00BD5CCC /* Test */ = {
 			isa = PBXGroup;
 			children = (
-				30D9966B269F9C1A00BD5CCC /* file.json */,
 				30D9967526A0689400BD5CCC /* TestCoffeeMachine.cpp */,
 				30D9967626A0689400BD5CCC /* TestCoffeeMachine.hpp */,
 			);

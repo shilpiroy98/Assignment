@@ -21,6 +21,10 @@
 #include <thread>
 using json = nlohmann::json;
 
+/*
+ CoffeeMachine - maintains list of ingredients in machine
+ and list of beverages it can prepare
+ */
 class CoffeeMachine {
     int m_outlets;
     IngredientInventory *m_items;
@@ -33,11 +37,13 @@ public:
         m_items =  new IngredientInventory(ingredientList);
     }
     
+    // add beverage name & its recipe to beverage inventory
     void AddBeverage(std::string name, json recipe) {
         if(m_beverages == nullptr) return;
         m_beverages->AddBeverage(name, recipe);
     }
     
+    // add ingredient name & quantity to ingredient inventory
     void AddIngredientItems(std::string name, int quantity) {
         if(m_items == nullptr) return;
         m_items->AddIngredient(name, quantity);

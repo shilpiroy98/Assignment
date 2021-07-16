@@ -21,21 +21,27 @@ public:
     static void PrepareBeverage(Beverage *beverage, IngredientInventory *items, std::string &res) {
 
         vector<Ingredient*> recipe = beverage->GetRecipe();
-        bool isPrepared = true;
-        for(int i = 0; i < recipe.size(); i++) {
-            bool isDeducted = items->DeductIngredientAmount(recipe[i]->GetName(), recipe[i]->GetQuantity());
-            if(!isDeducted) {
-               isPrepared = false;
-               res = beverage->GetName() + " can't be prepared because " + recipe[i]->GetName() + " is not available";
-                printf("%s can't be prepared because %s is not available\n", beverage->GetName().c_str(), recipe[i]->GetName().c_str());
-                break;
-            }
-        }
-
-        if(isPrepared) {
-            printf("%s is prepared\n", beverage->GetName().c_str());
+        pair<IngredientInventory::DeductResponse, string> response = items->DeductIngredientsAmount(recipe);
+        if(response.first == IngredientInventory::SUCCESS) {
             res = beverage->GetName() + " is prepared";
         }
+        else {
+            string to_add;
+            switch(response.first) {
+                    case IngredientInventory::NOT_AVAILABLE:
+                        to_add = "not available";
+                        break;
+                    case IngredientInventory::NOT_SUFFICIENT:
+                        to_add = "not sufficient";
+                        break;
+                    default:
+                        to_add = "incorrect params";
+                        break;
+                }
+            res = beverage->GetName() + " can't be prepared because " + response.second + " is " + to_add;
+        }
+        printf("%s\n", res.c_str());
     }
+
 };
 #endif /* BeverageMaker_hpp */
