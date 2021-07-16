@@ -19,6 +19,11 @@ using json = nlohmann::json;
 
 using namespace std;
 
+/*
+ Has beverage name &
+ Recipe to prepare
+ the beverage from
+ */
 class Beverage {
     std::string m_name;
     Recipe *m_recipe;
@@ -28,11 +33,13 @@ public:
         m_recipe = new Recipe(recipe);
     }
     
+    // add new recipe ingredients for the beverage
     void AddRecipe(json recipe) {
         if(m_recipe == nullptr) return;
        m_recipe->AddIngredient(recipe.begin().key(), recipe.begin().value());
     }
     
+    // return list of ingredients required to make the beverage
     vector<Ingredient*> GetRecipe() {
         vector<Ingredient*> res;
         if(m_recipe == nullptr) return res;

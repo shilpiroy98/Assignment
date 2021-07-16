@@ -15,9 +15,18 @@
 #include <thread>
 #include "IngredientInventory.hpp"
 
+/*
+ Called by coffeeMachine to prepare
+ requested beverage
+ */
 class BeverageMaker {
 
 public:
+    /* takes beverage, ingredientInventory and tries to prepare beverage
+     1. in case of failure, return appropriate response if ingredient was
+     insuffient or unavailable
+     2. in case of success, return appropriate success response
+    */
     static void PrepareBeverage(Beverage *beverage, IngredientInventory *items, std::string &res) {
 
         vector<Ingredient*> recipe = beverage->GetRecipe();

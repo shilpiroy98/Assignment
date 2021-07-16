@@ -12,6 +12,11 @@
 #include <stdio.h>
 #include <string>
 
+/*
+ contains ingredient info
+ - name & quantity
+ - deduct or add ingredient amount
+ */
 class Ingredient {
     std::string m_name;
     int m_quantity;
@@ -29,10 +34,12 @@ public:
         return m_name;
     }
     
+    // deduct ingredient amount
     void DeductAmount(int amount) {
         m_quantity -= amount;
     }
     
+    // add ingredient amount
     void AddAmount(int amount) {
         m_quantity += amount;
     }

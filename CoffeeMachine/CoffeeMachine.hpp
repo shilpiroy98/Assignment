@@ -31,6 +31,7 @@ class CoffeeMachine {
     BeverageInventory *m_beverages;
     
 public:
+    // initialize coffee machine with outlets, beverage list & ingredient list
     CoffeeMachine(int outlets, json beverageList, json ingredientList) {
         m_outlets = outlets;
         m_beverages = new BeverageInventory(beverageList);
@@ -49,15 +50,18 @@ public:
         m_items->AddIngredient(name, quantity);
     }
     
-    vector<std::string> PrepareCoffee() {
+    /* try to prepare all N beverages in inventory parallely
+     returns appropriate response from each thread about success/failure
+     */
+    vector<std::string> PrepareBeverage() {
         vector<std::string> emp;
          if(m_beverages == nullptr) return emp;
         vector<Beverage*> beverages = m_beverages->GetBeverages();
         vector<std::thread> threads;
-        vector<std::string> res(beverages.size());
+        vector<std::string> result(beverages.size());
         for(int i = 0; i < beverages.size(); i++) {
-            threads.push_back(std::thread([beverages, i, this, &res]() {
-                BeverageMaker::PrepareBeverage(beverages[i], this->m_items, res[i]);
+            threads.push_back(std::thread([beverages, i, this, &result]() {
+                BeverageMaker::PrepareBeverage(beverages[i], this->m_items, result[i]);
             }));
         }
        
@@ -65,7 +69,7 @@ public:
             thread.join();
         }
        
-        return res;
+        return result;
     }
     
 };

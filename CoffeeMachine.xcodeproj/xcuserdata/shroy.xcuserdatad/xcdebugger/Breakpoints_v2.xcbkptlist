@@ -14,8 +14,8 @@
             filePath = "CoffeeMachine/CoffeeMachine.hpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
             landmarkName = "CoffeeMachine(outlets, beverageList, ingredientList)"
             landmarkType = "7">
          </BreakpointContent>
@@ -30,8 +30,8 @@
             filePath = "CoffeeMachine/BeverageInventory.hpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
             landmarkName = "BeverageInventory(beverageList)"
             landmarkType = "7">
          </BreakpointContent>
@@ -46,8 +46,8 @@
             filePath = "CoffeeMachine/BeverageInventory.hpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
             landmarkName = "AddBeverage(name, recipe)"
             landmarkType = "7">
          </BreakpointContent>
@@ -62,8 +62,8 @@
             filePath = "CoffeeMachine/BeverageInventory.hpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
             landmarkName = "BeverageInventory(beverageList)"
             landmarkType = "7">
          </BreakpointContent>
@@ -78,8 +78,8 @@
             filePath = "CoffeeMachine/BeverageMaker.hpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
             landmarkName = "PrepareBeverage(beverage, items, res)"
             landmarkType = "7">
          </BreakpointContent>
@@ -94,8 +94,8 @@
             filePath = "CoffeeMachine/IngredientInventory.hpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
             landmarkName = "DeductIngredientsAmount(ingredients)"
             landmarkType = "7">
          </BreakpointContent>
@@ -110,9 +110,9 @@
             filePath = "CoffeeMachine/CoffeeMachine.hpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
-            landmarkName = "PrepareCoffee()"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "PrepareBeverage()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -126,9 +126,9 @@
             filePath = "CoffeeMachine/CoffeeMachine.hpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
-            landmarkName = "PrepareCoffee()"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "PrepareBeverage()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -142,9 +142,9 @@
             filePath = "CoffeeMachine/CoffeeMachine.hpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
-            landmarkName = "PrepareCoffee()"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "PrepareBeverage()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -158,8 +158,8 @@
             filePath = "CoffeeMachine/Ingredient.hpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
             landmarkName = "GetQuantity()"
             landmarkType = "7">
          </BreakpointContent>
@@ -174,8 +174,8 @@
             filePath = "CoffeeMachine/IngredientInventory.hpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
             landmarkName = "DeductIngredientsAmount(ingredients)"
             landmarkType = "7">
          </BreakpointContent>
@@ -190,8 +190,8 @@
             filePath = "CoffeeMachine/IngredientInventory.hpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
             landmarkName = "DeductIngredientsAmount(ingredients)"
             landmarkType = "7">
          </BreakpointContent>
@@ -206,24 +206,8 @@
             filePath = "CoffeeMachine/IngredientInventory.hpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
-            landmarkName = "DeductIngredientsAmount(ingredients)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "10530558-9B65-426F-AD52-51B345CB3A3D"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CoffeeMachine/IngredientInventory.hpp"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
             landmarkName = "DeductIngredientsAmount(ingredients)"
             landmarkType = "7">
          </BreakpointContent>
@@ -238,9 +222,25 @@
             filePath = "CoffeeMachine/BeverageMaker.hpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
             landmarkName = "PrepareBeverage(beverage, items, res)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1FE0A5DA-0A7E-4783-BC40-1383BD6C0F9E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CoffeeMachine/CoffeeMachine.hpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "PrepareBeverage()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

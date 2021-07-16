@@ -102,7 +102,7 @@ public:
              sort(expectedResults[i].begin(), expectedResults[i].end());
          }
          
-         vector<std::string> actualResult = cm->PrepareCoffee();
+         vector<std::string> actualResult = cm->PrepareBeverage();
          sort(actualResult.begin(), actualResult.end());
          bool isExpected = false, idx = -1;
           for(int i = 0; i < expectedResults.size(); i++) {
@@ -186,7 +186,7 @@ public:
              sort(expectedResults[i].begin(), expectedResults[i].end());
          }
          
-         vector<std::string> actualResult = cm->PrepareCoffee();
+         vector<std::string> actualResult = cm->PrepareBeverage();
          sort(actualResult.begin(), actualResult.end());
          bool isExpected = false, idx = -1;
           for(int i = 0; i < expectedResults.size(); i++) {
@@ -278,7 +278,7 @@ public:
              sort(expectedResults[i].begin(), expectedResults[i].end());
          }
          
-         vector<std::string> actualResult = cm->PrepareCoffee();
+         vector<std::string> actualResult = cm->PrepareBeverage();
          sort(actualResult.begin(), actualResult.end());
          bool isExpected = false, idx = -1;
           for(int i = 0; i < expectedResults.size(); i++) {
@@ -317,7 +317,7 @@ public:
         std::cout<<"\n----------\n";
 
         CoffeeMachine *cm = new CoffeeMachine(j["machine"]["outlets"]["count_n"], j["machine"]["beverages"], j["machine"]["total_items_quantity"]);
-        vector<std::string> result = cm->PrepareCoffee();
+        vector<std::string> result = cm->PrepareBeverage();
         assert(result.size() == 0);
         std::cout<<"No beverages to prepare \n----------\n";
     }

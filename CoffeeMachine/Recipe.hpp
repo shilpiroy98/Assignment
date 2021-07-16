@@ -17,6 +17,12 @@
 #include "json.hpp"
 using json = nlohmann::json;
 
+/*
+ contains list of
+ ingredients used as recipe
+ by a beverage
+ - add, remove, get ingredient
+ */
 class Recipe {
 protected:
     std::map<std::string, Ingredient*> m_ingredients;
@@ -33,6 +39,7 @@ public:
         
     }
     
+    // initialize recipe with ingredient list
     Recipe(json ingredients) {
         for(auto it = ingredients.begin(); it != ingredients.end(); it++) {
             if(CheckIfNameValid(it.key()) && CheckIfQuantityValid(it.value())) {
@@ -41,20 +48,24 @@ public:
         }
     }
     
+    // check if recipe contains the ingredient
     bool CheckIfIngredientPresent(std::string name) {
         return m_ingredients.find(name) != m_ingredients.end();
     }
     
+    // add ingredient to recipe
     void AddIngredient(std::string name, int quantity) {
         if(!CheckIfNameValid(name) || !CheckIfQuantityValid(quantity)) return;
         m_ingredients[name] = new Ingredient(name, quantity);
     }
     
+    // remove ingredient from recipe
     void RemoveIngredient(std::string name) {
         if(!CheckIfIngredientPresent(name)) return;
         m_ingredients.erase(name);
     }
     
+    // returns list of ingredients required to prepare the recipe
     std::vector<Ingredient*> GetIngredients() {
         std::vector<Ingredient*> ingredients;
         for(auto it = m_ingredients.begin(); it != m_ingredients.end(); it++) {
